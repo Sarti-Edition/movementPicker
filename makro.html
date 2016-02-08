@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+                    <title>movementPicker</title>
+                    
+                    <!-- Bootstrap -->
+                    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+                    <link href="css/makro.css" rel="stylesheet"/>
+                        
+                        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+                        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+    <body>
+        <div class="container">
+            <div class="well">
+                <h1>movementPicker</h1>
+                <p></p>
+            </div>
+            
+            <!-- main content area -->
+            <div class="row">
+                
+                <div id="movementBox" class="col-xs-9">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Druck Boston</th>
+                                <th>Partitur Budapest</th>
+                                <th>Partitur Schwerin</th>
+                                <th>Partitur Wien</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> <!-- row1 -->
+                                    <div data-meiID="xml:id_des_MEI-Dokuments" data-sourceID="#B" id="mdiv1" class="mdiv dovesei" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Sinfonia_AllegroAssai_D</h1>
+                                        <p class="meter">4/4</p>
+                                        <p class="key">D major</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv2" class="mdiv dovesei" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Sinfonia_AllegroAssai_D</h1>
+                                        <p class="meter">4/4</p>
+                                        <p class="key">D major</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv3" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Sinfonia_AllegroSpiritoso_D</h1>
+                                        <p class="meter">4/4</p>
+                                        <p class="key">D major</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv4" class="mdiv dovesei" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Sinfonia_AllegroAssai_D</h1>
+                                        <p class="meter">4/4</p>
+                                        <p class="key">D major</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>  <!-- row2 -->
+                                    <div id="mdiv5" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Introduzione_LaVoglioCosi</h1>
+                                        <p class="meter">3/8</p>
+                                        <p class="key">B major</p>
+                                        <p class="incipLyric">C’est ma volonté</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv6" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Introduzione_LaVoglioCosi</h1>
+                                        <p class="meter">3/8</p>
+                                        <p class="key">B major</p>
+                                        <p class="incipLyric">La voglio così</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv7" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Introduzione_LaVoglioCosi</h1>
+                                        <p class="meter">3/8</p>
+                                        <p class="key">B major</p>
+                                        <p class="incipLyric">La voglio così</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv8" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Introduzione_LaVoglioCosi</h1>
+                                        <p class="meter">4/4</p>
+                                        <p class="key">B major</p>
+                                        <p class="incipLyric">La voglio così</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>  <!-- row3 -->
+                                    <div id="mdiv9" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Dialog</h1>
+                                        <p class="incipLyricDialogRec">Monsieur et Madame</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv10" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Recit_InsommaMieiSignori</h1>
+                                        <p class="incipLyricDialogRec">Insomma miei Signori</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv11" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Recit_InsommaMieiSignori</h1>
+                                        <p class="incipLyricDialogRec">In somma miei signori</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv12" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Recit_InsommaMieiSignori</h1>
+                                        <p class="incipLyricDialogRec">In somma miei Signori</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>  <!-- row4 -->
+                                    <div id="mdiv13" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Aria_LaDonnaESempreInstabile</h1>
+                                        <p class="meter">4/4</p>
+                                        <p class="key">E-flat major</p>
+                                        <p class="incipLyric">Oui d’une Femmelette</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv14" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Aria_LaDonnaESempreInstabile</h1>
+                                        <p class="meter">4/4</p>
+                                        <p class="key">E-flat major</p>
+                                        <p class="incipLyric">La donna è sempre instabile</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv15" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Aria_VoSoffrireAUnCertoSegno</h1>
+                                        <p class="meter">4/4</p>
+                                        <p class="key">C major</p>
+                                        <p class="incipLyric">Vo soffrire a un certo segno</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv16" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Aria_PerUnaPicca</h1>
+                                        <p class="meter">6/8</p>
+                                        <p class="key">F major</p>
+                                        <p class="incipLyric">Per una picca</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>  <!-- row5 -->
+                                    <div id="mdiv17" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Dialog</h1>
+                                        <p class="incipLyricDialogRec">Oh ce n’est point par caprice</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv18" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Recit_UdisteIoLHoSentito</h1>
+                                        <p class="incipLyricDialogRec">Udiste io l’ho sentito</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv19" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Recit_UdisteIoLHoSentito</h1>
+                                        <p class="incipLyricDialogRec">Udiste? Io l’ho sentito</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv20" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Recit_UdisteIoLHoSentito</h1>
+                                        <p class="incipLyricDialogRec">Udiste</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                            <!-- todo: ergänze zwei reihen!!!  ######## hier weitermachen!!!-->
+                            
+                            <tr>
+                                <td>  <!-- row6 -->
+                                    <div id="mdiv21" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Aria_IoVoglioUnoSposino_A</h1>
+                                        <p class="meter">4/4</p>
+                                        <p class="key">A major</p>
+                                        <p class="incipLyric">Vive le mariage</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv22" class="mdiv dovesei" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Aria_IoVoglioUnoSposino_A</h1>
+                                        <p class="meter">4/4</p>
+                                        <p class="key">A major</p>
+                                        <p class="incipLyric">Io voglio uno sposino</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv23" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Aria_IoVoglioUnoSposino_A</h1>
+                                        <p class="meter">4/4</p>
+                                        <p class="key">A major</p>
+                                        <p class="incipLyric">Io voglio uno sposino</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv24" class="mdiv dovesei" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Aria_IoVoglioUnoSposino_A</h1>
+                                        <p class="meter">4/4</p>
+                                        <p class="key">A major</p>
+                                        <p class="incipLyric">Io voglio uno sposino</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                            <!-- todo. reihen ergänzen!!! -->
+                            
+                            <tr>
+                                <td>  <!-- row6 -->
+                                    <div id="mdiv21" class="mdiv dovesei" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Aria_LOndaPlacida</h1>
+                                        <p class="meter">Alla Breve</p>
+                                        <p class="key">A major</p>
+                                        <p class="incipLyric">Qui n’aimerait pas Hélène</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv22" class="mdiv dovesei" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Aria_InAmorCiVuolFinezza_Soler</h1>
+                                        <p class="meter">3/4</p>
+                                        <p class="key">A major</p>
+                                        <p class="incipLyric">In amor ci vuol finezza</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv23" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Aria_UnAssedioAllaLontana</h1>
+                                        <p class="meter">4/4</p>
+                                        <p class="key">G major</p>
+                                        <p class="incipLyric">Un assedio alla lontana</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv24" class="mdiv dovesei" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1>Aria_InAmorCiVuolFinezza_2</h1>
+                                        <p class="meter">2/4</p>
+                                        <p class="key">G major</p>
+                                        <p class="incipLyric">In amor ci vuol finezza“</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- row -->
+                                <td> 
+                                    <div id="mdiv" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1></h1>
+                                        <p class="meter"></p>
+                                        <p class="key"></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1></h1>
+                                        <p class="meter"></p>
+                                        <p class="key"></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1></h1>
+                                        <p class="meter"></p>
+                                        <p class="key"></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1></h1>
+                                        <p class="meter"></p>
+                                        <p class="key"></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1></h1>
+                                        <p class="meter"></p>
+                                        <p class="key"></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1></h1>
+                                        <p class="meter"></p>
+                                        <p class="key"></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1></h1>
+                                        <p class="meter"></p>
+                                        <p class="key"></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1></h1>
+                                        <p class="meter"></p>
+                                        <p class="key"></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1></h1>
+                                        <p class="meter"></p>
+                                        <p class="key"></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1></h1>
+                                        <p class="meter"></p>
+                                        <p class="key"></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1></h1>
+                                        <p class="meter"></p>
+                                        <p class="key"></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1></h1>
+                                        <p class="meter"></p>
+                                        <p class="key"></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1></h1>
+                                        <p class="meter"></p>
+                                        <p class="key"></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1></h1>
+                                        <p class="meter"></p>
+                                        <p class="key"></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1></h1>
+                                        <p class="meter"></p>
+                                        <p class="key"></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1></h1>
+                                        <p class="meter"></p>
+                                        <p class="key"></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1></h1>
+                                        <p class="meter"></p>
+                                        <p class="key"></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1></h1>
+                                        <p class="meter"></p>
+                                        <p class="key"></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1></h1>
+                                        <p class="meter"></p>
+                                        <p class="key"></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1></h1>
+                                        <p class="meter"></p>
+                                        <p class="key"></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1></h1>
+                                        <p class="meter"></p>
+                                        <p class="key"></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="mdiv" class="mdiv" draggable="true"
+                                        ondragstart="drag(event)" ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                                        <h1></h1>
+                                        <p class="meter"></p>
+                                        <p class="key"></p>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                
+                
+                <div id="toolBox" class="col-xs-3">
+                    <button id="toggleDetailBtn" type="button" class="btn btn-default btn-sm">Show Details</button>
+                    <button id="getMdivsBtn" type="button" class="btn btn-primary btn-sm">get list</button>
+                    
+                    <h3>Sequence of movements</h3>
+                    <div id="customMdivs" dropzone="copy" ondrop="drop(event)" ondragover="allowDrop(event)"  ondragenter="markTarget(event)" ondragleave="unmarkTarget(event)">
+                        
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/makro.js"></script>
+    </body>
+</html>
